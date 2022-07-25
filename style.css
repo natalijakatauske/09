@@ -1,0 +1,37 @@
+body {
+    font-size: 0;
+}
+
+.pirmas {
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    margin: 10px;
+}
+
+div:first-child {
+    /* transition: width 3s; */
+    animation-name: pirmas;
+    animation-duration: 4s;
+}
+
+@keyframes pirmas {
+    from {background-color: green;}
+    to {background-color: red;}
+}
+
+@media screen and (min-width: 600px) {
+    div {
+        background-color: aqua;
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .pirmas {
+        background-color: rgb(95, 42, 165);
+        display: inline-block;
+        width: 20%;
+    }
+}

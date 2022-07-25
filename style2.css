@@ -1,0 +1,21 @@
+.child {
+    background-color: blue;
+    height: 250px;
+    width: 100%;
+}
+
+@media screen and (min-width:786px) {
+    .child {
+        background-color: yellow;
+        height: 350px;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .child {
+        background-color: green;
+        height: 450px;
+        width: 33.33%;
+    }
+}
